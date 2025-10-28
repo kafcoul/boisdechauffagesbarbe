@@ -123,7 +123,7 @@ export default function HomePage() {
               </Link>
               <a href="tel:+14505290479" className="bg-white text-orange-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg w-full sm:w-auto">
                 <FaPhone className="inline mr-2" />
-                Appelez maintenant
+                Commandez dès maintenant
               </a>
             </div>
 
