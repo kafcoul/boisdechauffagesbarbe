@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { FaFire, FaCheckCircle, FaTruck, FaLeaf, FaShieldAlt, FaStar, FaPhone } from 'react-icons/fa'
+import { FaFire, FaCheckCircle, FaTruck, FaLeaf, FaShieldAlt, FaStar, FaPhone, FaClipboardList, FaCalendarAlt } from 'react-icons/fa'
 
 export default function HomePage() {
   const products = [
@@ -39,23 +39,23 @@ export default function HomePage() {
 
   const advantages = [
     {
-      icon: <FaLeaf className="text-4xl" />,
-      title: 'Bois 100% Naturel',
-      description: 'Aucun produit chimique, respectueux de l\'environnement. Pure qualité québécoise.',
+      icon: <FaClipboardList className="text-4xl" />,
+      title: '1. Commander',
+      description: 'Remplissez notre formulaire en ligne simple et rapide. Choisissez votre type de bois et quantité.',
     },
     {
-      icon: <FaFire className="text-4xl" />,
-      title: 'Séchage Optimal',
-      description: 'Séché 12-18 mois naturellement. Taux d\'humidité <20% pour une combustion parfaite.',
+      icon: <FaCalendarAlt className="text-4xl" />,
+      title: '2. Planifier',
+      description: 'Confirmez votre commande et planifiez la livraison selon vos disponibilités via formulaire.',
     },
     {
       icon: <FaTruck className="text-4xl" />,
-      title: 'Livraison Express',
+      title: '3. Livraison Express',
       description: 'Livré chez vous en 48h maximum. Service professionnel et ponctuel garanti.',
     },
     {
       icon: <FaShieldAlt className="text-4xl" />,
-      title: 'Satisfaction Garantie',
+      title: '4. Satisfaction Garantie',
       description: 'Qualité irréprochable ou argent remis. Votre satisfaction est notre engagement.',
     },
   ]
@@ -219,9 +219,9 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-gradient-to-br from-forest-50 to-primary-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="section-title">Pourquoi Choisir BOIS DE CHAUFFAGE BARBE?</h2>
+            <h2 className="section-title">Comment Ça Marche?</h2>
             <p className="section-subtitle mx-auto">
-              Commerce spécialisé en bois et matériaux • Excellence et passion depuis 2010
+              Un processus simple et efficace pour commander votre bois de chauffage
             </p>
           </div>
 
