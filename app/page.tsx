@@ -28,6 +28,14 @@ export default function HomePage() {
       popular: false,
     },
     {
+      name: 'Granulés Premium',
+      description: 'Granulés de bois 100% naturels. Combustion propre et efficace pour poêles à granulés.',
+      price: '6.50$',
+      unit: 'le sac (15kg)',
+      icon: '🌾',
+      popular: false,
+    },
+    {
       name: 'Frêne Blanc',
       description: 'Chaleur immédiate et constante. Idéal pour démarrer vos feux rapidement.',
       price: '115$',

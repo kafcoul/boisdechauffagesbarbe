@@ -268,9 +268,10 @@ export default function ContactPageClient() {
                         >
                           <option value="">Sélectionnez...</option>
                           <option value="erable">Érable Dur</option>
-                          <option value="bouleau">Bouleau Jaune</option>
-                          <option value="frene">Frêne Blanc</option>
                           <option value="melange">Mélange Premium</option>
+                          <option value="bouleau">Bouleau Jaune</option>
+                          <option value="granules">Granulés Premium</option>
+                          <option value="frene">Frêne Blanc</option>
                           <option value="allumage">Bois d'Allumage</option>
                           <option value="autre">Autre / Question</option>
                         </select>

@@ -40,6 +40,21 @@ export default function ProduitsPage() {
       popular: false,
     },
     {
+      name: 'Granulés Premium',
+      price: '6.50$',
+      priceHalf: '3.50$',
+      description: 'Granulés de bois 100% naturels de première qualité. Combustion propre et efficace pour poêles à granulés.',
+      icon: '🌾',
+      features: [
+        'Granulés 100% résineux certifiés',
+        'Pouvoir calorifique: 4,8 kWh/kg',
+        'Taux de cendres < 0,7%',
+        'Combustion propre et uniforme',
+        'Sacs de 15kg faciles à manipuler',
+      ],
+      popular: false,
+    },
+    {
       name: 'Bouleau Jaune',
       price: '120$',
       priceHalf: '65$',
