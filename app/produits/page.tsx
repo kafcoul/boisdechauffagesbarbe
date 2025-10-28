@@ -11,8 +11,8 @@ export default function ProduitsPage() {
   const products = [
     {
       name: 'Érable Dur (Sugar Maple)',
-      price: '320$',
-      priceHalf: '170$',
+      price: '150$',
+      priceHalf: '80$',
       description: 'Le roi incontesté du bois de chauffage! L\'érable dur offre le meilleur pouvoir calorifique et produit des braises durables.',
       icon: '🍁',
       features: [
@@ -25,9 +25,24 @@ export default function ProduitsPage() {
       popular: true,
     },
     {
+      name: 'Mélange Premium',
+      price: '125$',
+      priceHalf: '65$',
+      description: 'Mélange soigneusement sélectionné de bois francs pour une combustion optimale et économique.',
+      icon: '🔥',
+      features: [
+        'Mélange d\'érable, bouleau et frêne',
+        'Pouvoir calorifique élevé',
+        'Combustion équilibrée',
+        'Excellent rapport qualité-prix',
+        'Séché 12-15 mois',
+      ],
+      popular: false,
+    },
+    {
       name: 'Bouleau Jaune',
-      price: '290$',
-      priceHalf: '155$',
+      price: '120$',
+      priceHalf: '65$',
       description: 'Excellent équilibre entre chaleur intense et durée de combustion. Populaire et économique.',
       icon: '🌳',
       features: [
@@ -41,8 +56,8 @@ export default function ProduitsPage() {
     },
     {
       name: 'Frêne Blanc',
-      price: '280$',
-      priceHalf: '150$',
+      price: '115$',
+      priceHalf: '60$',
       description: 'Excellente chaleur, peut même brûler légèrement vert. Parfait pour usage d\'urgence ou immédiat.',
       icon: '🪵',
       features: [

@@ -6,15 +6,23 @@ export default function HomePage() {
     {
       name: 'Érable Dur',
       description: 'Le champion du chauffage ! Pouvoir calorifique exceptionnel avec des braises qui durent toute la nuit.',
-      price: '320$',
+      price: '150$',
       unit: 'la corde',
       icon: '🍁',
       popular: true,
     },
     {
+      name: 'Mélange Premium',
+      description: 'Mélange sélectionné de bois francs pour une combustion optimale et économique.',
+      price: '125$',
+      unit: 'la corde',
+      icon: '🔥',
+      popular: false,
+    },
+    {
       name: 'Bouleau Jaune',
       description: 'L\'équilibre parfait entre chaleur intense et combustion durable. Facile à allumer.',
-      price: '290$',
+      price: '120$',
       unit: 'la corde',
       icon: '🌳',
       popular: false,
@@ -22,7 +30,7 @@ export default function HomePage() {
     {
       name: 'Frêne Blanc',
       description: 'Chaleur immédiate et constante. Idéal pour démarrer vos feux rapidement.',
-      price: '280$',
+      price: '115$',
       unit: 'la corde',
       icon: '🪵',
       popular: false,
@@ -76,50 +84,61 @@ export default function HomePage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary-50 via-white to-forest-50 py-16 md:py-24 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-10 left-10 text-9xl">🌲</div>
+      <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
+          }}
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60" />
+        
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 text-9xl">🔥</div>
           <div className="absolute bottom-20 right-20 text-9xl">🪵</div>
           <div className="absolute top-1/2 left-1/4 text-7xl">🍁</div>
         </div>
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center bg-forest-100 text-forest-800 px-4 py-2 rounded-full mb-6">
+            <div className="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full mb-6 shadow-lg">
               <FaFire className="mr-2" />
               <span className="font-semibold text-sm">Commerce de bois et matériaux • Transformation • Vente depuis 2010</span>
             </div>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-900 mb-6">
-              BOIS DE CHAUFFAGE <span className="text-forest-700">BARBE</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6 drop-shadow-lg">
+              BOIS DE CHAUFFAGE <span className="text-orange-400">BARBE</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-100 mb-8 max-w-2xl mx-auto drop-shadow-md">
               Commerce de détail de bois et matériaux de construction. Achat de bois en longueur, transformation et vente de bois de chauffage premium à Québec.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/produits" className="btn-primary text-lg w-full sm:w-auto">
+              <Link href="/produits" className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg w-full sm:w-auto">
                 Découvrir nos produits
               </Link>
-              <a href="tel:+14505290479" className="btn-outline text-lg w-full sm:w-auto">
+              <a href="tel:+14505290479" className="bg-white text-orange-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg w-full sm:w-auto">
                 <FaPhone className="inline mr-2" />
                 Appelez maintenant
               </a>
             </div>
 
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-              <div className="flex flex-col items-center">
-                <div className="text-3xl font-bold text-forest-700">15+</div>
-                <div className="text-sm text-gray-600">Années d'expérience</div>
+              <div className="flex flex-col items-center bg-black bg-opacity-30 rounded-lg p-4">
+                <div className="text-3xl font-bold text-orange-400">15+</div>
+                <div className="text-sm text-gray-200">Années d'expérience</div>
               </div>
-              <div className="flex flex-col items-center">
-                <div className="text-3xl font-bold text-forest-700">2000+</div>
-                <div className="text-sm text-gray-600">Clients satisfaits</div>
+              <div className="flex flex-col items-center bg-black bg-opacity-30 rounded-lg p-4">
+                <div className="text-3xl font-bold text-orange-400">2000+</div>
+                <div className="text-sm text-gray-200">Clients satisfaits</div>
               </div>
-              <div className="flex flex-col items-center">
-                <div className="text-3xl font-bold text-forest-700">48h</div>
-                <div className="text-sm text-gray-600">Livraison rapide</div>
+              <div className="flex flex-col items-center bg-black bg-opacity-30 rounded-lg p-4">
+                <div className="text-3xl font-bold text-orange-400">24h</div>
+                <div className="text-sm text-gray-200">Service continu</div>
               </div>
             </div>
           </div>
