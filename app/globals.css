@@ -21,12 +21,20 @@
     @apply bg-forest-600 hover:bg-forest-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
   }
 
+  .btn-primary-orange {
+    @apply bg-orange-600 hover:bg-orange-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg;
+  }
+
   .btn-secondary {
     @apply bg-primary-600 hover:bg-primary-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5;
   }
 
   .btn-outline {
     @apply border-2 border-forest-600 text-forest-700 hover:bg-forest-50 font-semibold py-3 px-6 rounded-lg transition-all duration-300;
+  }
+
+  .btn-outline-white {
+    @apply bg-white text-orange-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg;
   }
 
   .card {
@@ -39,6 +47,10 @@
 
   .section-subtitle {
     @apply text-lg md:text-xl text-gray-600 max-w-3xl;
+  }
+
+  .hero-stat-card {
+    @apply flex flex-col items-center bg-black bg-opacity-30 rounded-lg p-4;
   }
 }
 

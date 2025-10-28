@@ -89,11 +89,11 @@ export default function HomePage() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
+            backgroundImage: `url('https://images.unsplash.com/photo-1574271143515-fb71e1f4edf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80')`
           }}
         />
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
+        {/* Dark Overlay for better text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70" />
         
         {/* Decorative Elements */}
         <div className="absolute inset-0 opacity-10">
@@ -118,25 +118,25 @@ export default function HomePage() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/produits" className="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg w-full sm:w-auto">
+              <Link href="/produits" className="btn-primary-orange w-full sm:w-auto">
                 Découvrir nos produits
               </Link>
-              <a href="tel:+14505290479" className="bg-white text-orange-600 hover:bg-gray-100 font-semibold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-lg w-full sm:w-auto">
+              <a href="tel:+14505290479" className="btn-outline-white w-full sm:w-auto">
                 <FaPhone className="inline mr-2" />
                 Commandez dès maintenant
               </a>
             </div>
 
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
-              <div className="flex flex-col items-center bg-black bg-opacity-30 rounded-lg p-4">
+              <div className="hero-stat-card">
                 <div className="text-3xl font-bold text-orange-400">15+</div>
                 <div className="text-sm text-gray-200">Années d'expérience</div>
               </div>
-              <div className="flex flex-col items-center bg-black bg-opacity-30 rounded-lg p-4">
+              <div className="hero-stat-card">
                 <div className="text-3xl font-bold text-orange-400">2000+</div>
                 <div className="text-sm text-gray-200">Clients satisfaits</div>
               </div>
-              <div className="flex flex-col items-center bg-black bg-opacity-30 rounded-lg p-4">
+              <div className="hero-stat-card">
                 <div className="text-3xl font-bold text-orange-400">24h</div>
                 <div className="text-sm text-gray-200">Service continu</div>
               </div>
